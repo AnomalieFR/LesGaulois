@@ -1,8 +1,11 @@
 package personnages;
 
+import village_gaulois.Village;
+
 public class Gaulois {
 	private String nom;
 	private int force;
+	private Village village;
 	private int effetPotion = 1;
 
 	public Gaulois(String nom, int force) {
