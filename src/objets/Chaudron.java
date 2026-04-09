@@ -1,0 +1,20 @@
+package objets;
+
+public class Chaudron {
+	private int quantitePotion;
+	private int forcePotion;
+
+	public boolean resterPotion() {
+		return quantitePotion > 0;
+	}
+
+	public void remplirChaudron(int quantite, int force) {
+		quantitePotion = quantite;
+		forcePotion = force;
+	}
+
+	public int prendreLouche() {
+		quantitePotion--;
+		return forcePotion;
+	}
+}
